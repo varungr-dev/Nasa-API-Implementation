@@ -27,34 +27,34 @@ Discover the NASA Astronomy picture of the day(apod) and Rover images from the m
 Astronomy Picture Of The Day (APOD) and Mars Rover Photos:-
 Fetching and displaying stunning images from Nasa's API using **Spring Boot**.
 
-Backend:-
+**Backend:-**
 Utilizes **MySQL** database for data storage.
 
-Spring Framework:-
+**Spring Framework:-**
 The project is developed using the robust and efficient **Spring Boot 3** and **Spring Framework 6**, ensuring a scalable and maintainable codebase. The project showcases a sophisticated integration of cutting-edge technologies, emphasizing security, performance, and user experience.
 
-Restful Web Services:-
+**Restful Web Services:-**
 **RESTful web services** have been meticulously crafted to facilitate seamless access to NASA's Astronomy Picture of the Day and Mars Rover Photos, offering a streamlined experience for users and developers. A comprehensive **REST CRUD API** has been implemented for managing Astronomy Pictures of the Day. Leveraging Spring Security, the API restricts access to authorized administrators, ensuring secure and controlled data operations.
 
-Frontend:-
+**Frontend:-**
 The front-end is designed using the **Model-View-Controller (MVC) architecture**, emphasizing modularity and separation of concerns. **Thymeleaf**, a modern server-side Java template engine, is employed for dynamic and elegant server-side rendering of HTML templates. Basic **HTML5, CSS, and Bootstrap** form the core of the front-end technologies. Bootstrap, in particular, enhances the user interface with **responsive design** elements, ensuring a visually appealing and **user-friendly experience**.
 
-Security:-
+**Security:-**
 **Spring Security** has been employed to fortify the application, enabling **custom login pages** and safeguarding endpoints. The implementation extends further to incorporate **JWT with OAuth2 resource server** for enhanced user **authentication and authorization**.
 
-Admin Page:-
+**Admin Page:-**
 Provides an **Admin Page** for performing CRUD operations for APOD, giving administrators control over the content.
 
-Swagger Documentation:-
+**Swagger Documentation:-**
 Utilizes **Swagger** for comprehensive documentation of the REST APIs, making it easy for developers to understand and integrate.
 
-Exception Handling:-
+**Exception Handling:-**
 The project demonstrates a commitment to reliability by incorporating custom **exception handling for endpoints**. This ensures graceful handling of errors, enhancing the overall resilience of the application.
 
-Deployment:-
+**Deployment:-**
 For deployment, the project leverages **Docker and AWS Elastic Beanstalk**, showcasing an infrastructure that is not only scalable but also ensures ease of management and deployment in the cloud.
 
-Testing:-
+**Testing:-**
 Conducts **JUnit and Mockito and Integration Tests with Test Containers** on all layers of the project, ensuring reliability and robustness.
 
 <hr style="width:75%">
@@ -90,10 +90,10 @@ Conducts **JUnit and Mockito and Integration Tests with Test Containers** on all
 
 To get started with the Nasa API Implementation project, follow these steps:--
 
-Step-1:-
+**Step-1:-**
 Download (git clone) the repository.
 
-Step-2:--
+**Step-2:--**
 Run MySQL as Docker container. An sql script must be executed during docker container and can be done with **docker-entrypoint-initdb.d.**
 This sql script is for custom user and roles( authorities ) tables.
 The table is used for logging into the application.( User name and password ).
@@ -101,19 +101,19 @@ The table is used for logging into the application.( User name and password ).
 
 `docker run --detach --env MYSQL_ROOT_PASSWORD=yourpassword --env MYSQL_USER=yourusername --env MYSQL_PASSWORD=yourpassword --env MYSQL_DATABASE=yourdatabaseName --name mysql --publish 3306:3306 --volume your-sql-script-path:/docker-entrypoint-initdb.d mysql:8-oracle`
 
-Make sure to replace yourpassword with your desired user password.
-Make sure to replace yourusername with your desired user name.
-Make sure to replace yourdatabasename with your desired database schema name.
-Make sure to replace your-sql-script-path where the 01.sql file is located.
+Make sure to replace **yourpassword** with your desired user password.
+Make sure to replace **yourusername** with your desired user name.
+Make sure to replace **yourdatabasename** with your desired database schema name.
+Make sure to replace **your-sql-script-path** where the 01.sql file is located.
 
 `Example:- docker run --detach --env MYSQL_ROOT_PASSWORD=springbeta --env MYSQL_USER=spring --env MYSQL_PASSWORD=springbeta --env MYSQL_DATABASE=nasa-db --name mysql --publish 3306:3306 --volume D:\nasaSqlScripts:/docker-entrypoint-initdb.d mysql:8-oracle`
 
 
-Step-3:--
+**Step-3:--**
 
-Make changes for MySQL Connection in applications.properties file.
+Make changes for MySQL Connection in **applications.properties** file.
 `spring.datasource.url=jdbc:mysql://localhost:3306/your-database-schema-name`.
-Make sure to replace your-database-schema name with the database name you have used for MySQL Docker container.
+Make sure to replace **your-database-schema name** with the database name you have used for MySQL Docker container.
 
 
 Start the main spring-boot application 
@@ -125,13 +125,14 @@ Access the home-page in your browser:--
 http://localhost:5000/nasa/home-page
 
 Use the following credentials for logging in.
-For guest users:--
-`Username:-  guest`
-`Password:-  guest@123`
 
-For Admin user:--
+**For guest users:--
+`Username:-  guest`
+`Password:-  guest@123`**
+
+**For Admin user:--
 `Username:- admin`
-`Password: admin@123`
+`Password: admin@123`**
 
 **NOTE:- 
 You can login to the application only if the sql script which contains custom users and roles has been executed during running of docker MySQL container.**
@@ -174,16 +175,16 @@ B.) There are 9 Cameras For These Rovers
    
    9.) MINITES-> Miniature Thermal Emission Spectrometer (Mini-TES) 
    
-C.) Earth Date Is In The Form Of YYYY/MM/DD 
+C.) Earth Date Is In The Form Of **YYYY/MM/DD** 
 
 D.) You can fetch Mars photos based on the rovername, earthdate, rovercamera. 
 
-   Ex:- `/rover/curiosity/2015-06-03/fhaz`
+   **Ex:- `/rover/curiosity/2015-06-03/fhaz`**
    
 
 ## Documentation
 
-Explore the Swagger documentation to understand and integrate with the REST APIs. Access the documentation at `http://localhost:5000/swaggerdoc.html` .
+Explore the Swagger documentation to understand and integrate with the REST APIs. Access the documentation at **`http://localhost:5000/swaggerdoc.html`** .
 
 #### NOTE
 **If you access /swaggerdoc.html DIRECTLY without logging in, you can use the bearer token( JWT Authentication ).
