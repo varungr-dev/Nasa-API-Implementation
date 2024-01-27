@@ -1,6 +1,6 @@
 # Nasa API Implementation 🚀
 
-![](img/marsrover-icon.png)
+![](img/home-page.png)
 <hr style="width:75%">
 
 ## Introduction
