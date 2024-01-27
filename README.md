@@ -1,6 +1,7 @@
 # Nasa API Implementation 🚀
 
-![](img/home-page.png)
+![nasa-api-logo](https://github.com/varungr-dev/Nasa-API-Implementation/assets/144204974/47a63e0c-1268-4527-a1bd-7dd854171c27)
+
 <hr style="width:75%">
 
 ## Introduction
@@ -63,26 +64,25 @@ Conducts **JUnit and Mockito and Integration Tests with Test Containers** on all
 [**Try it out** 🌎](http://nasa-webapp-env.eba-bpm6gg2n.ap-south-1.elasticbeanstalk.com/nasa/home-page)
 
 #### Home-Page
-![](img/home-page.png)
+![home](https://github.com/varungr-dev/Nasa-API-Implementation/assets/144204974/65528a81-2f75-40b0-8881-11a1c0e3092d)
 
 #### Index-Page
-![](img/index-page.png)
+![index](https://github.com/varungr-dev/Nasa-API-Implementation/assets/144204974/55bff53e-f749-48f7-a85f-00fdb2d5287d)
 
 #### Astronomy Picture Of The Day( A P O D )
-![](img/apod-page.png)
+![apod](https://github.com/varungr-dev/Nasa-API-Implementation/assets/144204974/fdc5fb92-59f0-487e-8e65-d784121a54d6)
 
 #### Mars Rover Page
-![](img/mars-rover-page.png)
+![rover](https://github.com/varungr-dev/Nasa-API-Implementation/assets/144204974/15723c32-57bc-4bb1-a2bf-e4344f3b8e55)
 
 #### Admin Page
-![](img/admin-page.png)
+![admin](https://github.com/varungr-dev/Nasa-API-Implementation/assets/144204974/144c2bf8-4664-411f-9980-39677df0c6c9)
 
 #### Swagger Documentation Page
-![](img/swagger-doc-page.png)
+![swagger](https://github.com/varungr-dev/Nasa-API-Implementation/assets/144204974/572d17a7-a77f-4ab4-acfb-ea84e4bf660e)
 
 #### Logout Page
-![](img/logout-page.png)
-
+![logout](https://github.com/varungr-dev/Nasa-API-Implementation/assets/144204974/92e8dc5a-bd8b-4532-9831-131509ed4629)
 
 <hr style="width:75%">
 
