@@ -90,52 +90,7 @@ Conducts **JUnit and Mockito and Integration Tests with Test Containers** on all
 
 To get started with the Nasa API Implementation project, follow these steps:--
 
-**Step-1:-**
-Download (git clone) the repository.
-
-**Step-2:--**
-Run MySQL as Docker container. An sql script must be executed during docker container and can be done with **docker-entrypoint-initdb.d.**
-This sql script is for custom user and roles( authorities ) tables.
-The table is used for logging into the application.( User name and password ).
-**Sql scripts are there in the /nasaSqlScripts folder.**
-
-`docker run --detach --env MYSQL_ROOT_PASSWORD=yourpassword --env MYSQL_USER=yourusername --env MYSQL_PASSWORD=yourpassword --env MYSQL_DATABASE=yourdatabaseName --name mysql --publish 3306:3306 --volume your-sql-script-path:/docker-entrypoint-initdb.d mysql:8-oracle`
-
-Make sure to replace **yourpassword** with your desired user password.
-Make sure to replace **yourusername** with your desired user name.
-Make sure to replace **yourdatabasename** with your desired database schema name.
-Make sure to replace **your-sql-script-path** where the 01.sql file is located.
-
-`Example:- docker run --detach --env MYSQL_ROOT_PASSWORD=springbeta --env MYSQL_USER=spring --env MYSQL_PASSWORD=springbeta --env MYSQL_DATABASE=nasa-db --name mysql --publish 3306:3306 --volume D:\nasaSqlScripts:/docker-entrypoint-initdb.d mysql:8-oracle`
-
-
-**Step-3:--**
-
-Make changes for MySQL Connection in **applications.properties** file.
-`spring.datasource.url=jdbc:mysql://localhost:3306/your-database-schema-name`.
-Make sure to replace **your-database-schema name** with the database name you have used for MySQL Docker container.
-
-
-Start the main spring-boot application 
-( OR )
- `mvn clean package`
- `mvn spring-boot:run` 
-
-Access the home-page in your browser:--
-http://localhost:5000/nasa/home-page
-
-Use the following credentials for logging in.
-
-**For guest users:--
-`Username:-  guest`
-`Password:-  guest@123`**
-
-**For Admin user:--
-`Username:- admin`
-`Password: admin@123`**
-
-**NOTE:- 
-You can login to the application only if the sql script which contains custom users and roles has been executed during running of docker MySQL container.**
+FOR STEPS CONTACT:- varungrvv@gmail.com :)
 
 <hr style="width:75%">
 
